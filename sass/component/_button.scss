@@ -1,0 +1,64 @@
+@import "../helpers/_variable.scss";
+
+/*use for input type="submit" only*/
+
+.btn-pink {
+    background-color: $primary-color;
+    border: 0px;
+    border-radius: 0px;
+    padding: 0px;
+    width: 146px;
+    height: $input-height;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: white;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    &:hover {
+        background-color: $button-hover-color;
+        cursor: pointer;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+
+/*social btn*/
+
+.square-wrapper {
+    width: 35px;
+    height: 35px;
+    background-color: #333333;
+    margin-left: 10px;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+    & i {
+        padding-left: 5px;
+    }
+    & a {
+        color: white;
+    }
+    &:hover {
+        background-color: transparent;
+        border: 0.1px solid white;
+    }
+}
+
+.primary-btn {
+    color: white;
+    font-weight: 400;
+    padding: 10px 16px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    border: 1px solid white;
+    background: transparent;
+    transition: all 0.5s ease;
+    &:hover {
+        background: $primary-color;
+        border-color: $primary-color;
+    }
+}
